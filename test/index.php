@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . "/lib_ext/autoload.php";
+require __DIR__ . "/../lib_ext/autoload.php";
 
 //
 //<nome do vendor(desenvolvedor)>\<nome da biblioteca>\<metodo chamado>;
@@ -15,7 +15,19 @@ use Notification\Email;
 
 //$novoEmail = new Notification\Email\sendMail;
 //$novoEmail = new Email\sendMail;
-$novoEmail = new Email;
+
+
+$smtpDebug = 2;
+$host = "smtp.example.com";
+$user = "user@example.com";
+$pass = "secret";
+$smtpSecure = "tls";
+$port = "465";
+$setFromEmail = "from@example.com";
+$setFromName = "Mailer";
+
+
+$novoEmail = new Email($smtpDebug, $host, $user, $pass, $smtpSecure, $port, $setFromEmail, $setFromName);
 
 //$novoEmail->sendMail();
 
