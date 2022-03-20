@@ -39,6 +39,7 @@ MIT
 **Another UpInside Training course, make good use of it!**
 
 [//]:#
+[Gustavo Oliveira]: <https://github.com/gustadevrj>
 [Gustavo Web]: <mailto:gustavo@upinside.com.br>
 [Robson V. Leite]: <mailto:robson@upinside.com.br>
 [UpInside Training]: <https://www.upinside.com.br>
